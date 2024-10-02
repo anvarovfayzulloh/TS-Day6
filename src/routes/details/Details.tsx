@@ -5,7 +5,7 @@ const Details = () => {
     const { id } = useParams();
     const todos = JSON.parse(localStorage.getItem('todos') || '[]');
     //@ts-ignore
-    const todo = todos.find((todo: TTodo) => todo.id === Number(id));
+    const todo = todos.find((todo: TTodo) => todo.id === id);
 
     return (
         <div className="flex justify-center items-center h-screen bg-gray-100 w-full p-4">
